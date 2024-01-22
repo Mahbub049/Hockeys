@@ -28,6 +28,9 @@
                 'grey-color': '#ffffff99',
                 'black-ash-color': '#13131833',
                 'paragraph-color': '#13131899',
+                'lightgreen': '#49D293',
+                'yellow': '#FFB546',
+                'skyblue': '#4C8DF1',
               }
             }
           }
@@ -43,7 +46,7 @@
 </head>
 <body class="font-manrope">
     <!-- Navbar and Banner Section -->
-    <header class="container mx-auto pt-12 px-5 pb-[100px]">
+    <header class="container mx-auto pt-4 lg:pt-12 px-5 pb-10 lg:pb-[100px]">
         <!-- Navigation Bar -->
         <nav class="mb-12 ">
             <div class="navbar bg-base-100 p-0">
@@ -120,18 +123,55 @@
     </header>
 
     <!-- Main Sections of the website -->
-    <main class="container mx-auto">
+    <main class="container mx-auto px-5">
         <!-- Divider -->
         <hr class="border-b-2 border-dashed border-b-black-ash-color mb-8">
         <!-- Professional Hockeys Club Section -->
-        <section>
-            <div class="text-center mb-12">
+        <section class="pb-10 lg:pb-[100px]">
+            <div class="text-center mb-8">
                 <h1 class="text-black-color text-4xl font-extrabold mb-6">Professional Hockeys Club</h1>
                 <p class="text-paragraph-color font-medium leading-7 max-w-xl mx-auto">Dive into the elite world of professional hockey clubs, where skill, passion, and camaraderie converge in excellence. </p>
             </div>
-            <div>
+
+            <!-- Divider -->
+            <hr class="border-b-2 border-dashed border-b-black-ash-color mb-8 lg:mb-12">
+
+            <!-- Progress Bars -->
+            <div class="grid grid-cols-1 gap-8 lg:grid-cols-4">
+              <!-- 1st Facility -->
+              <div class="text-center">
+                <div class="radial-progress text-primary text-red-color px-31 py-41" style="--value:87; --size:8rem;" role="progressbar"><p class="text-black-color text-2xl font-extrabold ">87%</p></div>
+                <h3 class="text-black-color text-xl font-semibold pt-6 pb-4">Prayer Facility</h3>
+                <p class="paragraph-color leading-7">Spiritual retreat for focused athletes.</p>
+              </div>
+
+              <!-- 2nd Facility -->
+              <div class="text-center">
+                <div class="radial-progress text-primary text-lightgreen px-31 py-41" style="--value:95; --size:8rem;" role="progressbar"><p class="text-black-color text-2xl font-extrabold ">95%</p></div>
+                <h3 class="text-black-color text-xl font-semibold pt-6 pb-4">Experienced Coach</h3>
+                <p class="paragraph-color leading-7">Guidance by seasoned coaching experts.</p>
+              </div>
+
+              <!-- 3rd Facility -->
+              <div class="text-center">
+                <div class="radial-progress text-primary text-yellow px-31 py-41" style="--value:90; --size:8rem;" role="progressbar"><p class="text-black-color text-2xl font-extrabold ">90%</p></div>
+                <h3 class="text-black-color text-xl font-semibold pt-6 pb-4">Senior Player</h3>
+                <p class="paragraph-color leading-7">Wisdom and Skill Unleashed Here.</p>
+              </div>
+
+              <!-- 4th Facility -->
+              <div class="text-center">
+                <div class="radial-progress text-primary text-skyblue px-31 py-41" style="--value:87; --size:8rem;" role="progressbar"><p class="text-black-color text-2xl font-extrabold ">87%</p></div>
+                <h3 class="text-black-color text-xl font-semibold pt-6 pb-4">Training Ground</h3>
+                <p class="paragraph-color leading-7">Forge Skills on Elite Turf.</p>
+              </div>
             </div>
         </section>
+
+        <!-- Divider -->
+        <hr class="border-b-2 border-dashed border-b-black-ash-color mb-8">
+
+        <!-- Program Sections -->
     </main>
 
     <!-- Footer section -->
