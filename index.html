@@ -22,7 +22,9 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                'black-color': '#131318',
+                'red-color': '#FF4240',
+                'ash-color': '#89898B',
               }
             }
           }
@@ -38,9 +40,38 @@
 </head>
 <body>
     <!-- Navbar and Banner Section -->
-    <header>
+    <header class="container mx-auto font-manrope pt-12">
         <nav>
-
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li class="text-red-color font-bold"><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-4xl font-extrabold text-web-black">Hockey<span class="text-red-color">'</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-base flex gap-11">
+                    <li class="text-red-color font-bold"><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end flex gap-6">
+                <i class="fa-solid fa-magnifying-glass hidden lg:flex cursor-pointer text-ash-color"></i>
+                  <a class="btn bg-red-color text-white hover:opacity-70 hover:bg-red-color">Get Ticket</a>
+                </div>
+              </div>
         </nav>
     </header>
 
