@@ -25,6 +25,9 @@
                 'black-color': '#131318',
                 'red-color': '#FF4240',
                 'ash-color': '#89898B',
+                'grey-color': '#ffffff99',
+                'black-ash-color': '#13131833',
+                'paragraph-color': '#13131899',
               }
             }
           }
@@ -38,14 +41,15 @@
         }
     </style>
 </head>
-<body>
+<body class="font-manrope">
     <!-- Navbar and Banner Section -->
-    <header class="container mx-auto font-manrope pt-12">
-        <nav>
-            <div class="navbar bg-base-100">
+    <header class="container mx-auto pt-12 px-5 pb-[100px]">
+        <!-- Navigation Bar -->
+        <nav class="mb-12 ">
+            <div class="navbar bg-base-100 p-0">
                 <div class="navbar-start">
                   <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost p-0 lg:hidden">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
                     <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
@@ -56,7 +60,7 @@
                         <li><a>Contact</a></li>
                     </ul>
                   </div>
-                  <a class="btn btn-ghost text-4xl font-extrabold text-web-black">Hockey<span class="text-red-color">'</span>s</a>
+                  <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold text-web-black">Hockey<span class="text-red-color">'</span>s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1 text-base flex gap-11">
@@ -73,11 +77,61 @@
                 </div>
               </div>
         </nav>
+
+        <!-- Slider Banner Section -->
+        <div class="relative">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="./Images/1.png" class="w-full" />
+                  <div class="absolute flex gap-4 transform -translate-y-1/2 left-5 right-5 justify-center lg:justify-start top-[80%] lg:top-[90%]">
+                    <a href="#slide4" class="btn btn-circle text-white bg-black border-black">❮</a> 
+                    <a href="#slide2" class="btn btn-circle text-white bg-black border-black">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="./Images/1.png" class="w-full" />
+                  <div class="absolute flex gap-4 transform -translate-y-1/2 left-5 right-5 justify-center lg:justify-start top-[80%] lg:top-[90%]">
+                    <a href="#slide1" class="btn btn-circle text-white bg-black border-black">❮</a> 
+                    <a href="#slide3" class="btn btn-circle text-white bg-black border-black">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="./Images/1.png" class="w-full" />
+                  <div class="absolute flex gap-4 transform -translate-y-1/2 left-5 right-5 justify-center lg:justify-start top-[80%] lg:top-[90%]">
+                    <a href="#slide2" class="btn btn-circle text-white bg-black border-black">❮</a> 
+                    <a href="#slide4" class="btn btn-circle text-white bg-black border-black">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="./Images/1.png" class="w-full" />
+                  <div class="absolute flex gap-4 transform -translate-y-1/2 left-5 right-5 justify-center lg:justify-start top-[80%] lg:top-[90%]">
+                    <a href="#slide3" class="btn btn-circle text-white bg-black border-black">❮</a> 
+                    <a href="#slide1" class="btn btn-circle text-white bg-black border-black">❯</a>
+                  </div>
+                </div>
+            </div>
+
+              <!-- Badge Part -->
+            <div class="bg-black text-white px-8 py-8 rounded-2xl lg:max-w-xl lg:absolute lg:bottom-8 lg:right-8 mt-4">
+                <h3 class="mb-4 text-2xl font-extrabold">Meet all the heroes from the field</h3>
+                <p class="leading-7 font-medium text-grey-color">Explore the realm of hockey legends, meet the field's heroes, and embrace their inspiring journeys.</p>
+            </div>
+        </div>
     </header>
 
     <!-- Main Sections of the website -->
-    <main>
-
+    <main class="container mx-auto">
+        <!-- Divider -->
+        <hr class="border-b-2 border-dashed border-b-black-ash-color mb-8">
+        <!-- Professional Hockeys Club Section -->
+        <section>
+            <div class="text-center mb-12">
+                <h1 class="text-black-color text-4xl font-extrabold mb-6">Professional Hockeys Club</h1>
+                <p class="text-paragraph-color font-medium leading-7 max-w-xl mx-auto">Dive into the elite world of professional hockey clubs, where skill, passion, and camaraderie converge in excellence. </p>
+            </div>
+            <div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer section -->
