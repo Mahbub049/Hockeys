@@ -28,6 +28,7 @@
                 'grey-color': '#ffffff99',
                 'black-ash-color': '#13131833',
                 'paragraph-color': '#13131899',
+                'input-color': '#13131808',
                 'lightgreen': '#49D293',
                 'yellow': '#FFB546',
                 'skyblue': '#4C8DF1',
@@ -620,23 +621,23 @@
           <hr class="border-b-2 border-dashed border-b-black-ash-color mb-12 ">
 
           <!-- Get In Touch Main Content -->
-          <div class="flex gap-6">
+          <div class="flex flex-col lg:flex-row gap-6">
             <!-- Left Part -->
             <div class="border-2 rounded-2xl px-12 py-12">
               <!-- Call -->
-              <div class="px-8 py-8 mb-6">
+              <div class="px-8 py-8 rounded-2xl mb-6 bg-[#bced6d1a]">
                 <img src="./Images/Group 1171275317.png" alt="">
                 <p class="text-paragraph-color pb-1 pt-6">Phone Number</p>
                 <h3 class="text-lg font-extrabold text-black-color">(+62) 123-321-543</h3>
               </div>
               <!-- Call -->
-              <div class="px-8 py-8 mb-6">
+              <div class="px-8 py-8 rounded-2xl mb-6 bg-[#fddd5f1a]">
                 <img src="./Images/Group 1171275318.png" alt="">
                 <p class="text-paragraph-color pb-1 pt-6">Email</p>
                 <h3 class="text-lg font-extrabold text-black-color">hockeys@support.com</h3>
               </div>
               <!-- Call -->
-              <div class="px-8 py-8 mb-6">
+              <div class="px-8 py-8 mb-6 rounded-2xl bg-[#629cf31a]">
                 <img src="./Images/Group 1171275321.png" alt="">
                 <p class="text-paragraph-color pb-1 pt-6">Location</p>
                 <h3 class="text-lg font-extrabold text-black-color">152/1 Mohakhali Wireless Gate</h3>
@@ -644,40 +645,56 @@
             </div>
 
             <!-- Right Part -->
-            <div class=" grid grid-cols-2 gap-6 flex-1">
+            <div class=" grid grid-cols-1 lg:grid-cols-2 gap-6 flex-1">
               <!-- Name -->
               <div class="flex flex-col">
                 <label for="" class="text-2xl font-bold text-black-color pb-4"> Your Name</label>
-                  <input type="text" placeholder="Enter Your Full Name" class="py-5 px-5">
+                  <input type="text" placeholder="Enter Your Full Name" class="py-5 px-5 bg-[input-color] rounded-xl border-0">
               </div>
               <!-- Email -->
               <div class="flex flex-col">
                 <label for="" class="text-2xl font-bold text-black-color pb-4"> Your Email</label>
-                <input type="email" placeholder="Enter Your email" class="py-5 px-5">
+                <input type="email" placeholder="Enter Your email" class="py-5 px-5 bg-[input-color] rounded-xl border-0">
                 
               </div>
-              <!-- Email -->
+              <!-- Subject -->
               <div class="flex flex-col">
                 <label for="" class="text-2xl font-bold text-black-color pb-4"> Your Subject</label>
-                  <input type="text" placeholder="Enter Your subject" class="py-5 px-5">
+                  <input type="text" placeholder="Enter Your subject" class="py-5 px-5 bg-[input-color] rounded-xl border-0">
               </div>
               <!-- Subject -->
               <div class="flex flex-col">
                 <label for="" class="text-2xl font-bold text-black-color pb-4"> Phone Number</label>
-                  <input type="text" placeholder="Enter Your Message" class="py-5 px-5">
+                  <input type="text" placeholder="Enter Your Message" class="py-5 px-5 bg-[input-color] rounded-xl border-0">
               </div>
               <!-- Message -->
-              <div class="flex flex-col col-span-2">
+              <div class="flex flex-col lg:col-span-2">
                 <label for="" class="text-2xl font-bold text-black-color pb-4"> Message</label>
-                  <textarea name="" id="" cols="30" rows="10" class="py-5 px-5" placeholder="Write Your Message"></textarea>
+                  <textarea name="" id="" cols="30" rows="10" class="py-5 px-5 bg-[input-color] rounded-xl border-0" placeholder="Write Your Message"></textarea>
               </div>
               <!-- btn -->
-              <div class="flex flex-col col-span-2 ">
+              <div class="flex flex-col lg:col-span-2 ">
                 <input class="bg-red-color py-4 px-6 text-white text-sm font-bold rounded-xl border-[1px] border-red-color" type="button" value="Send Message">
               </div>
             </div>
           </div>
         </section>
+
+        <!-- Social Media Section -->
+        <section class="pb-10 lg:pb-[100px]">
+          <!-- Content -->
+          <div class="text-center mb-8 bg-[#13131808]">
+            <h1 class="text-black-color text-4xl font-extrabold mb-6">Social Media</h1>
+
+            <!-- Icons -->
+            <div class="text-3xl flex justify-center gap-12">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-github"></i>
+            </div>
+          </div>
+
     </main>
 
     <!-- Footer section -->
